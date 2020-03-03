@@ -12,7 +12,7 @@ data "template_file" "emr_configurations" {
 }
 
 module "emr" {
-  source = "github.com/azavea/terraform-aws-emr-cluster?ref=0.1.0"
+  source = "git@github.com:devops-best-practices/terraform-aws-emr-cluster.git?ref=0.1.0"
 
   name          = "DatarpocCluster"
   vpc_id        = "vpc-20f74844"
